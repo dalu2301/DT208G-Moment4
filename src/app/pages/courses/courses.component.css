@@ -16,11 +16,6 @@ table {
         font-weight: 300;
         font-size: 1.25rem;
         text-align: left;
-        background-color: var(--color-table-caption-background);
-    }
-
-    & thead {
-        background-color: var(--color-table-header-background);
     }
 
     & caption,
@@ -35,16 +30,16 @@ table {
     }
 
     & tbody>tr:nth-of-type(even) {
-        background-color: var(--color-table-row-accent-background);
+        background-color: #003340;
     }
 
     & tbody>tr:nth-of-type(odd) {
-        background-color: var(--color-table-row-normal-background);
+        background-color: #002d38;
     }
 
 }
 
-@media (max-width: 56.5625rem) {
+@media (max-width: 45rem) {
 
     th {
         display: none;

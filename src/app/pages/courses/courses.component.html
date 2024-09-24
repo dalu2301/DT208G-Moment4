@@ -10,10 +10,12 @@
             <th>Progression</th>
         </tr>
     </thead>
-    <tbody *ngFor="let course of courses">
-        <td>{{ course.code }}</td>
-        <td>{{ course.coursename }}</td>
-        <td>{{ course.progression }}</td>
+    <tbody>
+        <tr *ngFor="let course of courses">
+            <td data-cell="Kurskod">{{ course.code }}</td>
+            <td data-cell="Kursnamn">{{ course.coursename }}</td>
+            <td data-cell="Progression">{{ course.progression }}</td>
+        </tr>
     </tbody>
 </table>
 
