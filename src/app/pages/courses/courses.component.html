@@ -1,0 +1,19 @@
+
+<h1>Kurser</h1>
+
+<table>
+    <caption>Webbutveckling - Ramschema</caption>
+    <thead>
+        <tr>
+            <th>Kurskod</th>
+            <th>Kursnamn</th>   
+            <th>Progression</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let course of courses">
+        <td>{{ course.code }}</td>
+        <td>{{ course.coursename }}</td>
+        <td>{{ course.progression }}</td>
+    </tbody>
+</table>
+
