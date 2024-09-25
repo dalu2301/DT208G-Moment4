@@ -27,6 +27,11 @@ table {
     & th {
         text-align: left;
         font-weight: 600;
+
+        & span {
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
 
     & tbody>tr:nth-of-type(even) {
@@ -41,8 +46,9 @@ table {
 
 @media (max-width: 45rem) {
 
-    th {
-        display: none;
+    thead {
+        display: grid;
+        justify-content: center;
     }
 
     td {
