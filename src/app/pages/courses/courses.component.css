@@ -2,7 +2,6 @@ table {
 
     border-collapse: collapse;
     width: 100%;
-    margin-block-start: 1rem;
 
     & a {
         font-weight: 600;
@@ -42,6 +41,20 @@ table {
         background-color: #002d38;
     }
 
+}
+
+.filter {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+
+    & input {
+        width: 100%;
+        margin: 0;
+        padding-block: 0.5rem;
+        padding-inline: 1rem;
+    }
 }
 
 @media (max-width: 45rem) {

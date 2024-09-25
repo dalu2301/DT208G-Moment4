@@ -1,12 +1,16 @@
-
 <h1>Kurser</h1>
+
+<div class="filter">
+    <label for="filter">Filtrera resultatet:</label>
+    <input type="text" id="filter" [(ngModel)]="filterValue" (input)="filterResult();" placeholder="Filtrera på kurskod eller kursnamn">
+</div>
 
 <table>
     <caption>Webbutveckling - Ramschema</caption>
     <thead>
         <tr>
             <th><span (click)="sortTable('code');">Kurskod</span></th>
-            <th><span (click)="sortTable('name');">Kursnamn</span></th>   
+            <th><span (click)="sortTable('name');">Kursnamn</span></th>
             <th><span (click)="sortTable('prog');">Progression</span></th>
         </tr>
     </thead>
@@ -18,4 +22,3 @@
         </tr>
     </tbody>
 </table>
-
