@@ -29,10 +29,12 @@ export class CoursesComponent implements OnInit {
   sortedProg: number = Filter.Ascending
   filterValue: string = ''
 
+  // Dependency Injection för CourseService
   constructor(private courseService: CourseService) { }
 
   ngOnInit(): void {
 
+    // Hämta in den data som finns is JSON-filen
     this.courseService.getCourses().subscribe((courses) => {
 
       // Den Array som kommer att manipuleras
@@ -44,6 +46,9 @@ export class CoursesComponent implements OnInit {
 
   }
 
+  // Metod för att filtrera resultatet utifrån kurskod 
+  // eller kursnamn. Plockar ut korrekta träffar utifrån
+  // "facit" i unsortedCourses med hjälp av filter().
   filterResult(): void {
 
     this.courses = this.unsortedCourses.filter((inputValue) => {
@@ -54,6 +59,9 @@ export class CoursesComponent implements OnInit {
 
   }
 
+  // Metod för att sortera tabellen i stigande eller fallande
+  // ordning utifrån kurskod, kursnamn eller progression. 
+  // Sorterar tabellen med hjälp av sort().
   sortTable(column: string): void {
 
     switch (column) {

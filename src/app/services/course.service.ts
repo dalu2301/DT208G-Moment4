@@ -12,10 +12,12 @@ export class CourseService {
 
   constructor(private http: HttpClient) { }
 
+  // Hämtar JSON-data från adressen ovan med
+  // hjälp av HttpClient och Observable.
   getCourses(): Observable<Course[]> {
-  
+
     return this.http.get<Course[]>(this.url)
-  
+
   }
-  
+
 }
