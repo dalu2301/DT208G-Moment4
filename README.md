@@ -22,3 +22,5 @@ Krav för att uppgiften skall anses som godkänd:
 + Component skapad för visualisering och logik för kurslistan (CoursesComponent).
 + CourseService injeceras (Dependency Injection) i konstruktor för CoursesComponent.
 + En kombination av Directives, Interpolation och Event Binding för att lösa sortering och filtrering.
+
+**Ett tillägg:** Sorteringen och filtreringen arbetar fritt från varandra, det vill säga att sorteringen inte tar hänsyn till filtreringen och vice versa. Detta är dock åtgärdat i projektuppgiften.
